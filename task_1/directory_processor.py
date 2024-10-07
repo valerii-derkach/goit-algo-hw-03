@@ -2,7 +2,6 @@ from pathlib import Path
 import shutil
 
 def process_directory(source_dir: Path, dest_dir: Path):
-    # рекурсивно обробляємо директорію
     try:
         for item in source_dir.iterdir():
             if item.is_dir():
